@@ -21,8 +21,20 @@ export function Footer() {
         </nav>
       </div>
       <div className="border-t border-white/5 py-5">
-        <p className="text-center font-mono text-xs text-faint">
-          © {/* year set at build */}2026 {siteConfig.name}. A Lemon Squeezy integration demo.
+        <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center font-mono text-xs text-faint">
+          <span>© 2026 {siteConfig.name}. A Lemon Squeezy integration demo.</span>
+          <span aria-hidden className="text-faint/60">·</span>
+          <span>
+            Crafted by{' '}
+            <a
+              href="https://mohamedgado.com"
+              target="_blank"
+              rel="noopener author"
+              className="text-smoke underline-offset-4 hover:text-ember hover:underline"
+            >
+              Mohamed Gado
+            </a>
+          </span>
         </p>
       </div>
     </footer>
