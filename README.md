@@ -1,12 +1,12 @@
 # ClipForge — SaaS landing page + Lemon Squeezy integration
 
-A production-shaped demo SaaS: a stunning, dark "Molten Foundry" landing page for
-a fictional video-repurposing tool, wired to a **complete Lemon Squeezy checkout
-and webhook flow**. Built to learn and test how payments work end-to-end before
-bolting them onto a real product.
+A demo SaaS: a dark "Molten Foundry" landing page for a fictional
+video-repurposing tool, wired to a **Lemon Squeezy checkout and webhook flow**.
+I built it to learn and test how payments work end to end before adding them to a
+real product.
 
 > Created as a payment-integration test harness. The marketing copy and product
-> are fictional; the **Lemon Squeezy integration is real and works**.
+> are fictional. The Lemon Squeezy integration is real.
 
 ## What it demonstrates
 
@@ -28,7 +28,7 @@ Landing page → click a plan → POST /api/checkout (Lemon Squeezy API mints a 
 
 Next.js 16 (App Router) · React 19 · Tailwind CSS v4 · Motion · lucide-react.
 No payment SDK — the Lemon Squeezy REST API is called directly with `fetch`, so
-the whole flow is transparent and easy to read.
+the whole flow is easy to read.
 
 ## Quick start
 
@@ -39,7 +39,7 @@ pnpm dev                        # http://localhost:3000
 ```
 
 The landing page renders without any credentials. To exercise checkout, follow
-**[SETUP.md](./SETUP.md)** — a 15-minute, step-by-step guide to creating a
+**[SETUP.md](./SETUP.md)**, a 15-minute, step-by-step guide to creating a
 test-mode store, products, API key, and webhook (including how to tunnel webhooks
 to localhost).
 
@@ -64,7 +64,7 @@ src/
 
 ## Rebranding
 
-Edit `src/config/site.ts` — name, tagline, pricing, and plan→variant mapping all
+Edit `src/config/site.ts`. The name, tagline, pricing, and plan→variant mapping all
 live there. Theme tokens (colors, fonts) are in `src/app/globals.css`.
 
 ## Design
